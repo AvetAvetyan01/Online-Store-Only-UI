@@ -1,0 +1,287 @@
+
+#popUp{
+    width: 90%;
+    margin: 10px auto 35px auto;
+    display: none;
+}
+#getBackButton_PopUp{
+    color: #fff;
+    font-size: 30px;
+    padding: 8px 10px;
+    background: rgb(31, 73, 241);
+    border-radius: 10px;
+    cursor: pointer;
+}
+#productPresent{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 15px 0;
+    background: #fff;
+    border-radius: 10px;
+}
+#productImageContainer{
+    width: 55%;
+    height: 500px;
+    display: grid;
+    place-items: center;
+}
+#productImage{
+    width: 380px;
+}
+#productGeneralCharacteristics{
+    width: 40%;
+}
+#productNameAndButtons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    padding: 20px 0;
+    border-bottom: 1px solid #7c7c7c;
+}
+#productNameAndButtons h2{
+    font-size: 30px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+}
+.buttons i{
+    cursor: pointer; 
+}
+#liked{
+    font-size: 22px;
+}
+#comparison{
+    font-size: 28px;
+    margin-left: 10px;
+}
+#productPrice{
+    width: 95%;
+    padding: 5px 0 15px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-bottom: 1px solid #7c7c7c;
+}
+#productPrice p{
+    padding: 10px 0;
+    font-size: 25px;
+    margin: 10px 0;
+}
+#productPrice p::after{
+    content: " AMD";
+}
+#productPrice span{
+    border-left: 4px solid rgb(31, 73, 241);
+    padding: 10px 0 10px 15px;
+}
+#productPrice span::after{
+    content: "/month (12 monthes)";
+    font-weight: 300;
+}
+
+#purchasesCount{
+    width: 95%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #7c7c7c;
+}
+#purchasesCount button{
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    color: #ffffff;
+    background: rgb(31, 73, 241);
+    border: none;
+    border-radius: 50%;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+#purchasesCount p{
+    font-size: 25px;
+    margin: 0 25px;
+}
+#additionallyInfo{
+    margin-bottom: 35px;
+}
+#additionallyInfo li{
+    display: flex;
+    margin: 10px 0;
+}
+#additionallyInfo p{
+    width: 40%;
+}
+#additionallyInfo p:nth-of-type(2){
+    font-weight: 700;
+}
+#productBuyButton{
+    border:none;
+    display: flex;
+    align-items: center;
+    background: rgb(31, 73, 241);
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 7px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+#productBuyButton p{
+    margin-left: 8px;
+}
+#productBuyButton:hover{
+    background: rgb(16, 56, 215);
+}
+#productBuyButton:active{
+    background: rgb(13, 41, 153);
+}
+#purchasesCount button:hover{
+    background: rgb(16, 56, 215);
+}
+#purchasesCount button:active{
+    background: rgb(13, 41, 153);
+}
+
+/*    CHARACTERISTICS    */
+#productAllCharacteristics{
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+    padding: 20px;
+    background: #fff;
+}
+/* .charContainer{} */
+.charTitle{
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.charsTitleIcon{
+    color: rgb(31, 73, 241);
+    font-size: 35px;
+    margin-right: 13px;
+}
+.charTitleText{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.charsList{
+    display: grid;
+    row-gap: 3px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.charsList li{
+    display: flex;
+    justify-content: space-between;
+}
+.charsList li p{
+    width: 22%;
+    padding: 10px;
+    background: #ececec;
+    font-weight: 100;
+}
+.charsList li span{
+    width: 77.8%;
+    padding: 11px;
+    background: #ececec;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

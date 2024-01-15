@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PAGE ICON -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/10165/10165819.png" type="image/x-icon">
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="styles/MainStyle.css">
+    <link rel="stylesheet" href="styles/MediaStyle.css">
+    <link rel="stylesheet" href="styles/CardsStyle.css">
+    <link rel="stylesheet" href="styles/PopUpStyle.css">
+    <link rel="stylesheet" href="styles/BasketStyle.css">
+    <link rel="stylesheet" href="styles/CompareStyle.css">
+    <!-- ICON LINK -->
+    <script src="https://kit.fontawesome.com/c04a62fc8b.js" crossorigin="anonymous"></script>
+    <!-- beautiful font -->
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <!-- navbar font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <!-- logo font -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+    <title>OneBit</title>
+</head>
+<body>
+    <header>
+        <div id="login_container">
+            <h2>Log in</h2>
+
+            <ul class="login_inputs">
+                <input type="text" id="emailLogin" placeholder="Email">
+                <input type="password" id="passwordLogin" placeholder="Password">
+            </ul>
+
+            <div>
+                <button id="loginContainerButton">Login</button>
+            </div>
+            
+            <p class="login_other_functional">
+                <a href="" id="forgotPassword">Forgot password?</a>
+                or
+                <a href="" id="register">Register</a>  
+            </p>
+        </div>
+
+
+        <div class="header_container" id="header_container">
+            <div id="logo">
+                <img src="https://cdn-icons-png.flaticon.com/128/10165/10165819.png" alt="logo">
+                <p>OneBit</p>
+            </div>
+
+            <div class="navigation">
+
+                <ul class="navigationButtons">
+                    
+                    <li id="basketButton">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div id="basketIndicator" class="indicator"></div>
+                    </li>
+
+                    <li id="lovedButton">
+                        <i class="fa-regular fa-heart"></i>
+                        <div id="lovedIndicator" class="indicator">0</div>
+                    </li>
+
+                    <li id="comparePageButton">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <div id="compareIndicator" class="indicator"></div>
+                    </li>
+                    
+                    <li id="loginButton">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Log in</p>
+                    </li>
+
+                </ul>
+                
+                <div id="burgerButton">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                
+                <!-- BURGER -->
+                <div id="burger">
+                    <div id="close">
+                        <i class="fa-regular fa-circle-xmark" id="closeIcon"></i>
+                    </div>
+
+                    <ul id="burger_list">
+                        <li>About us</li>
+                        <li>Contact us</li>
+                        <li>FAQ</li>
+                        <li>feedback</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <div id="popUp">
+        <i class="fa-solid fa-arrow-left" id="getBackButton_PopUp"></i>
+        
+        <div id="productPresent">
+            <div id="productImageContainer">
+                <img src="" alt="device image" id="productImage">
+            </div>
+            
+            <div id="productGeneralCharacteristics">
+                <div id="productNameAndButtons">
+                    <h2></h2>
+
+                    <div class="buttons">
+                        <i class="fa-classic fa-solid fa-scale-unbalanced" id="liked"></i>
+                        <i class="fa-regular fa-heart" id="comparison"></i>
+                    </div>
+                </div>
+
+                <div id="productPrice">
+                    <p></p>
+                    <span></span>
+                </div>
+                
+                <div id="purchasesCount">
+                    <button id="minuseCount"><i class="fa-solid fa-minus"></i></button>
+                    <p></p>
+                    <button id="addCount"><i class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <ul id="additionallyInfo">
+                    <li>
+                        <p>RAM</p>
+                        <p id="RAM"></p>
+                    </li>
+
+                    <li>
+                        <p>Memory</p>
+                        <p id="Memory"></p>
+                    </li>
+                    
+                    <li>
+                        <p>Announcement Year</p>
+                        <p id="AnnouncementYear"></p>
+                    </li>
+                </ul>
+
+                <button id="productBuyButton">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Buy</p>
+                </button>
+            </div>
+
+        </div>
+        
+        <div id="productAllCharacteristics"></div>
+    </div>
+    
+    <div id="basketPage">
+        <div id="info">
+            <i class="fa-solid fa-arrow-left" id="getBackButton_basketProducts"></i>
+
+            <div class="title">
+                <h2>Delivery Details</h2>
+                <p id="totalSum"></p>
+            </div>
+
+            <div style="height: 1px;background: #515151;"></div>
+
+            <ul class="payment_banks">
+                <li><img src="Images/banksImages/abb.png" alt="bank image"></li>
+                <li><img src="Images/banksImages/acba.jpg" alt="bank image"></li>
+                <li><img src="Images/banksImages/ameria.jpg" alt="bank image"></li>
+                <li><img src="Images/banksImages/ararat.png" alt="bank image"></li>
+                <li><img src="Images/banksImages/converse.jpg" alt="bank image"></li>
+                <li><img src="Images/banksImages/evoca.jpg" alt="bank image"></li>
+                <li><img src="Images/banksImages/fast.jpg" alt="bank image"></li>
+                <li><img src="Images/banksImages/hsbc.jpg" alt="bank image"></li>
+            </ul>
+        
+            <ul class="small_inputs">
+                <li id="name">
+                    <p>Name*</p>
+                    <input type="text">
+                </li>
+
+                <li id="surname">
+                    <p>Surname*</p>
+                    <input type="text">
+                </li>
+
+                <li id="mobilePhones">
+                    <p>Mobile Phones*</p>
+                    <input type="text">
+                </li>
+
+                <li id="email">
+                    <p>Email*</p>
+                    <input type="text">
+                </li>
+
+                <li id="region">
+                    <p>Region*</p>
+                    <input type="text">
+                </li>
+
+                <li id="City/Region">
+                    <p>City / Region*</p>
+                    <input type="text">
+                </li>
+            </ul>
+
+            <ul class="long_inputs">
+                <li id="address">
+                    <p>Address</p>
+                    <input type="text" placeholder="Street / House / Appartment">
+                </li>
+
+                <li id="additional_info">
+                    <p>Additional Information</p>
+                    <textarea name="info" cols="30" rows="7"></textarea>
+                </li>
+            </ul>
+
+            <div style="display: flex;justify-content: space-between;width: 95%;margin: 0 auto;">
+                <div class="agreement">
+                    <div id="check"></div>
+                    <p>I agree with</p>
+                    <a>Terms and conditions</a>
+                </div>
+
+                <button id="orderButton">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Buy</span>
+                </button>
+            </div>
+
+        </div>
+
+        <ul id="purchasedGoods"></ul>
+    </div>
+
+    <div id="likedProducts">
+        <div>
+            <i class="fa-solid fa-arrow-left" id="getBackButton_likedProducts"></i>
+            <h2>Liked Products</h2>
+        </div>
+    </div>
+
+    <div id="compareProductsPage">
+        <div id="compareProducts">
+            <div class="campare_title">
+                <i class="fa-solid fa-arrow-left" id="getBackButton_compareProducts"></i>
+                <p>Coumerasone</p>
+            </div>
+
+            <div id="generalParameters">
+                <ul id="modelImages"><p>Image</p></ul>
+                <ul id="modelNames"><p>Models</p></ul>
+                <ul id="modelPrices"><p>Prices</p></ul>
+            </div>
+
+            <ul id="parameters"></ul>
+        </div>
+    </div>
+
+    <main>
+
+
+        <section>
+            <div id="slider">
+                <ul id="slideList">
+                    <li class="slide active-slide" data-slideid="1">
+                        <img src="Images/slider_images/image1.jpg" alt="picture">
+                    </li>
+
+                    <li class="slide" data-slideid="2">
+                        <img src="Images/slider_images/image2.jpg" alt="picture">
+                    </li>
+                    
+                    <li class="slide" data-slideid="3">
+                        <img src="Images/slider_images/image3.jpg" alt="picture">
+                    </li>
+                    
+                    <li class="slide" data-slideid="4">
+                        <img src="Images/slider_images/image4.webp" alt="picture">
+                    </li>
+                </ul>
+
+                <div id="mainImage">
+                    <div id="mainSlides">
+                        <div class="mSlide active-mSlide" data-mslideid="1">
+                            <img src="./Images/slider_images/image1.jpg" alt="picture">
+                        </div>
+
+                        <div class="mSlide" data-mslideid="2">
+                            <img src="./Images/slider_images/image2.jpg" alt="picture">
+                        </div>
+
+                        <div class="mSlide" data-mslideid="3">
+                            <img src="./Images/slider_images/image3.jpg" alt="picture">
+                        </div>
+
+                        <div class="mSlide" data-mslideid="4">
+                                <img src="./Images/slider_images/image4.webp" alt="picture">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+            <ul class="categories">
+                <li class="category">
+                    <img src="https://cdn-icons-png.flaticon.com/128/977/977411.png" alt="image">
+                    <p>Phones</p>
+                </li>
+                <li class="category">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3843/3843463.png" alt="image">
+                    <p>Tablets</p>
+                </li>
+                <li class="category">
+                    <img src="https://cdn-icons-png.flaticon.com/128/916/916337.png" alt="image">
+                    <p>Watches</p>
+                </li>
+                <li class="category">
+                    <img src="https://cdn-icons-png.flaticon.com/128/900/900323.png" alt="image">
+                    <p>TVS</p>
+                </li>
+                <li class="category">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2292/2292112.png" alt="image">
+                    <p>Computers</p>
+                </li>
+                <li class="category">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1624/1624088.png" alt="image">
+                    <p>Accessories</p>
+                </li>
+                <li class="category">
+                    <img src="https://cdn-icons-png.flaticon.com/128/744/744141.png" alt="image">
+                    <p>Equipments</p>
+                </li>
+            </ul>
+        </section>
+        
+        <section>
+            <ul id="products"></ul>
+            <button id="watch_all">watch all</button>
+        </section>
+
+        <section>
+            <h2>BRANDS</h2>
+            <ul class="brands">
+                <li><img src="images/brandsImages/1.png" alt="brand image"></li>
+                <li><img src="images/brandsImages/2.png" alt="brand image"></li>
+                <li><img src="images/brandsImages/3.jpg" alt="brand image"></li>
+                <li><img src="images/brandsImages/4.png" alt="brand image"></li>
+                <li><img src="images/brandsImages/5.jpg" alt="brand image"></li>
+                <li><img src="images/brandsImages/6.jpg" alt="brand image"></li>
+                <li><img src="images/brandsImages/7.jpg" alt="brand image"></li>
+                <li><img src="images/brandsImages/8.jpg" alt="brand image"></li>
+                <li><img src="images/brandsImages/9.jpg" alt="brand image"></li>
+                <li><img src="images/brandsImages/10.jpg" alt="brand image"></li>
+                <li><img src="images/brandsImages/11.png" alt="brand image"></li>
+                <li><img src="images/brandsImages/12.png" alt="brand image"></li>
+                <li><img src="images/brandsImages/13.jpg" alt="brand image"></li>
+                <li><img src="images/brandsImages/14.jpg" alt="brand image"></li>
+                <li><img src="images/brandsImages/15.jpg" alt="brand image"></li>
+                <li><img src="images/brandsImages/16.jpg" alt="brand image"></li>
+                <li><img src="images/brandsImages/17.png" alt="brand image"></li>
+                <li><img src="images/brandsImages/18.jpg" alt="brand image"></li>
+                <li><img src="images/brandsImages/19.png" alt="brand image"></li>
+                <li><img src="images/brandsImages/20.jpg" alt="brand image"></li>
+                <li><img src="images/brandsImages/21.jpg" alt="brand image"></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_container">
+
+            <ul class="footer_navbar">
+                <li>About us</li>
+                <li>FAQ</li>
+                <li>Feedback</li>
+                <li>Official Suppliers</li>
+            </ul>
+
+            <ul class="contacts">
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-vk"></i></li>
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+            </ul>
+
+            <ul class="contact_numbers">
+                <li>+374 98 122 455</li>
+                <li>+374 77 230 233</li>
+                <li>+374 99 332 166</li>
+                <li>+374 55 545 626</li>
+            </ul>
+
+            <ul class="banks">
+                <li><i class="fa-brands fa-cc-visa"></i></li>
+                <li><i class="fa-brands fa-cc-paypal"></i></li>
+                <li><i class="fa-brands fa-cc-amazon-pay"></i></li>
+                <li><i class="fa-brands fa-cc-mastercard"></i></li>
+                <li><i class="fa-brands fa-cc-amex"></i></li>
+                <li><i class="fa-brands fa-cc-discover"></i></li>
+                <li><i class="fa-brands fa-cc-jcb"></i></li>
+                <li><i class="fa-brands fa-cc-apple-pay"></i></li>
+            </ul>
+        </div>
+
+        <p>Design and development <a href="">M4 company</a></p>
+    </footer>
+
+    <script src="Scripts/mainScript.js" type="module"></script>
+</body>
+</html>

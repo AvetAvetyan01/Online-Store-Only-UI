@@ -1,0 +1,158 @@
+
+section:nth-of-type(3){
+    width: 90%;
+    margin: 0 auto;
+}
+#products{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 1%;
+    row-gap: 1.5%;
+    grid-auto-rows: 320px;
+}
+.card{
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.25s;
+    transition-delay: 0.1s;
+}
+.card:hover{
+    transform: translateY(-6px);
+}
+.card:hover .top_elements{
+    opacity: 1;
+}
+.top_elements{
+    width: 95%;
+    padding: 10px 0 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: 0.4s;
+    opacity: 0;
+}
+.top_elements i{
+    color: rgb(139, 139, 139);
+}
+.top_elements i:hover{
+    cursor: pointer;
+}
+.compare_icon{
+    font-size: 18px;
+}
+.like_icon{
+    margin-left: 7px;
+    font-size: 22px;
+}
+
+.model_img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.company_name{
+    text-align: center;
+    font-weight: 100;
+    font-size: 14px;
+    cursor: pointer;
+    width: 75%;
+    margin: 0 auto;
+}
+.model_name{
+    text-align: center;
+    font-weight: 900;
+    word-spacing: 3px;
+    padding-top: 5px;
+    cursor: pointer;
+    width: 75%;
+    margin: 0 auto;
+}
+.price{
+    text-align: center;
+    padding: 10px 0;
+    user-select: none;
+}
+.cash_price{
+    font-size: 18px;
+    font-weight: 900;
+}
+.cash_price::after{
+    content: " AMD";
+    font-size: 18px;
+}
+.credit_price{
+    font-size: 15px;
+    padding-top: 5px;
+}
+.credit_price::after{
+    content: "/month";
+    font-size: 13px;
+}
+
+.bottom_elements{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.stars{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: end;
+    margin-left: 5%;
+}
+.star{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: #5c5c5c;
+}
+
+.buy_button{
+    width: 45%;
+    height: 60%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 40%;
+    left: 0;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 22px;
+    background: linear-gradient(90deg, rgb(132, 226, 255),rgb(65, 83, 250));
+    border: none;
+    cursor: pointer;
+}
+.buy_button_emojy{
+    width: 33px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

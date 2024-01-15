@@ -1,0 +1,406 @@
+
+#basketPage{
+    width: 95%;
+    display: none;
+    margin: 10px auto;
+    grid-template-columns: 50% 49%;
+    justify-content: space-between;
+}
+#getBackButton_basketProducts{
+    color: #fff;
+    font-size: 25px;
+    padding: 8px 10px;
+    background: rgb(31, 73, 241);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 2.5%;
+}
+#info{
+    background: #fff;
+    padding: 10px 0 20px 0;
+    border-radius: 10px;
+}
+.title{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px 0 15px 0;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: default;
+}
+.title h2{
+    font-size: 30px;
+    color: rgb(6, 0, 112);
+}
+#totalSum{
+    font-size: 45px;
+    color: #000;
+}
+.title p::before{
+    content: "Total : ";
+    font-size: 20px;
+}
+.title p::after{
+    content: " AMD";
+    font-size: 30px;
+}
+.payment_banks{
+    width: 95%;
+    margin: 20px auto 5px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.payment_banks li{
+    width: 12%;
+    border: 1px solid rgb(111, 111, 111);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.payment_banks li:hover{
+    box-shadow: 0 0 3px rgb(111,111,111);
+    border: 1px solid #323232;
+}
+.payment_banks img{
+    width: 100%;
+    display: block;
+}
+#info input,#info textarea{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    border: 1px solid #5e5e5e;
+}
+.small_inputs p,.long_inputs p{
+    margin: 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #515151;
+}
+.small_inputs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.small_inputs li{
+    width: 100%;
+}
+.small_inputs input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+}
+.long_inputs{
+    width: 95%;
+    margin: 0 auto;
+}
+.long_inputs li{
+    margin: 20px 0;
+}
+#address input{
+    width: 100%;
+    padding: 16px 10px;
+
+}
+#additional_info textarea{
+    width: 100%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+}
+.agreement{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+#check{
+    display: grid;
+    place-items: center;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    margin-right: 7px;
+}
+#check:hover{
+    border: 1px solid rgb(31, 73, 241);
+}
+.agreement p{
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    cursor: default;
+}
+.agreement a{
+    color: rgb(31, 73, 241);
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 10px;
+}
+.agreement a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#orderButton{
+    display: flex;
+    align-items: center;
+    background: rgb(31, 73, 241);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: default;
+    opacity: 0.6;
+    transition: 0.25s;
+}
+#orderButton i{
+    margin-right: 8px;
+}
+
+/* RIGHT */
+    /* RIGHT */
+        /* RIGHT */
+            /* RIGHT */
+                /* RIGHT */
+
+#purchasedGoods{
+    height: 855px;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+#purchasedGoods::-webkit-scrollbar{
+    display: none;
+}
+.basket_card{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.basket_card:last-child{
+    margin: 0;
+}
+.image_name_container{
+    display: flex;
+    width: 40%;
+}
+.card_model_name{
+    color: rgb(31, 73, 241);
+    margin-bottom: 5px;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+.card_model_name:hover{
+    text-decoration: underline;
+}
+.basket_card_img{
+    width: 35%;
+}
+.device_count{
+    display: flex;
+    align-items: center;
+}
+.device_count_indicator{
+    width: 40px;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+}
+.device_count i{
+    font-size: 14px;
+    padding: 9px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.25s;
+    color: #fff;
+    background: rgb(31, 73, 241);
+}
+.device_count i:hover{
+    background: rgb(16, 56, 215);
+}
+.ultPrice_delete{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ultimate_price{
+    margin-left: auto;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+
+}
+.delete_button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    padding: 5px 10px;
+    color: #fff;
+    background: rgb(6, 0, 112);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete_button i{
+    margin-right: 5px;
+    font-size: 18px;
+    margin-top: 3px;
+}
+.delete_button p{
+    font-size: 15px;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

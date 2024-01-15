@@ -1,0 +1,234 @@
+
+#compareProductsPage{
+    display: none;
+    margin: 20px 0;
+}
+.campare_title{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto 20px auto;
+    border-radius: 20px;
+}
+.campare_title i{
+    color: #fff;
+    background: blue;
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.campare_title p{
+    margin-left: 30px;
+    font-size: 35px;
+    font-family: 'Michroma', sans-serif;
+    color: rgb(6, 0, 112);
+}
+#compareProducts{
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+}
+#generalParameters{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    border-radius: 15px 0 15px 15px;
+    overflow: hidden;
+}
+#generalParameters p{
+    display: grid;
+    place-items: center;
+    color: #000000;
+    background: rgb(231, 231, 231);
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px 0;
+}
+#generalParameters ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 5px;
+}
+#modelImages li{
+    display: flex;
+    justify-content: end;
+    background: #fff;
+    border: 1px solid #000;
+}
+#modelImages img{
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+}
+.deleteComperativeProduct{
+    position: absolute;
+    padding: 8px 12px;
+    font-size: 15px;
+    background: rgb(6, 0, 112);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* PARAMETERS */
+    /* PARAMETERS */
+        /* PARAMETERS */
+            /* PARAMETERS */
+                /* PARAMETERS */
+
+#parameters{
+    width: 100%;
+    display: grid;
+    row-gap: 15px;
+    margin-top: 30px;
+}
+
+/* .param_container{} */
+.param_container div:nth-of-type(2){
+    display: grid;
+    row-gap: 5px;
+}
+.param_list_title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: default;
+}
+.param_list_title i{
+    color: rgb(31, 73, 241);
+    font-size: 30px;
+}
+.param_list_title p{
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+.param_container ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 5px;
+}
+.param_container ul li:nth-of-type(1) { font-weight: 400; }
+.param_container ul li{
+    background: #ececec;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
